@@ -401,6 +401,10 @@
         background-color: red;
       }
 
+      .status-indicator.updating {
+        background-color: dodgerblue;
+      }
+
       .status-notes {
         font-size: 0.9rem;
         color: var(--color-text-muted);
@@ -596,7 +600,9 @@
           <a href="https://alwayswinclub.sell.app/" class="button button-primary"
             >Purchase</a
           >
-          <a href="https://discord.gg/hJBmBqxJwA" class="button button-secondary">Discord</a>
+          <a href="https://discord.gg/hJBmBqxJwA" class="button button-secondary"
+            >Discord</a
+          >
           <a href="#status" class="button button-secondary">Status</a>
         </div>
       </div>
@@ -701,8 +707,8 @@
           <li class="status-item">
             <span class="game-name">Rainbow Six Siege</span>
             <div>
-              <span class="status-notes">Checking...</span>
-              <span class="status-indicator down" title="Down"></span>
+              <span class="status-notes">Updating...</span>
+              <span class="status-indicator updating" title="Updating"></span>
             </div>
           </li>
 
