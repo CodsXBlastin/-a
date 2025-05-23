@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>常に勝つ</title>
+    <meta
+      name="description"
+      content="Discover premium cheats for EAC/BE protected games with automated delivery and support."
+    />
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/icons/1373306509165072484/a752b289ce39adcdf077d877e158f2fd.webp?size=100&quality=lossless"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+      :root {
+        --color-background: #0e0e0e;
+        --color-background-darker: #121212;
+        --color-background-footer: #0a0a0a;
+        --color-accent: #00ffc3;
+        --color-text-primary: #ffffff;
+        --color-text-secondary: #cccccc;
+        --color-text-muted: #888;
+        --spacing-unit: 8px;
+        --spacing-small: calc(var(--spacing-unit) * 2);
+        --spacing-medium: calc(var(--spacing-unit) * 3);
+        --spacing-large: calc(var(--spacing-unit) * 4);
+        --spacing-extra-large: calc(var(--spacing-unit) * 8);
+        --border-radius-small: 8px;
+        --border-radius-medium: 12px;
+        --max-width-content: 1440px;
+        --header-height: 80px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--color-background);
+        color: var(--color-text-primary);
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--color-text-primary);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: var(--color-accent);
+      }
+
+      .container {
+        max-width: var(--max-width-content);
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+      }
+
+      button,
+      .button {
+        display: inline-block;
+        padding: var(--spacing-small) var(--spacing-medium);
+        border-radius: var(--border-radius-small);
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .button-primary {
+        background-color: var(--color-accent);
+        color: var(--color-background);
+      }
+
+      .button-primary:hover {
+        background-color: rgba(0, 255, 195, 0.8);
+        box-shadow: 0 0 15px var(--color-accent);
+      }
+
+      .button-secondary {
+        background-color: transparent;
+        color: var(--color-accent);
+        border: 2px solid var(--color-accent);
+      }
+
+      .button-secondary:hover {
+        background-color: var(--color-accent);
+        color: var(--color-background);
+        box-shadow: 0 0 15px var(--color-accent);
+      }
+
+      .section {
+        padding: var(--spacing-extra-large) 0;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: var(--spacing-large);
+      }
+
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: var(--header-height);
+        background-color: rgba(0, 0, 0, 0.85);
+        border-bottom: 1px solid #2a2a2a;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        backdrop-filter: blur(5px);
+        transition:
+          top 0.3s ease-in-out,
+          opacity 0.3s ease-in-out;
+      }
+
+      .header.hidden {
+        top: -var(--header-height);
+        opacity: 0;
+      }
+
+      .header .container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .header .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-right: auto;
+      }
+
+      .header .nav-links {
+        list-style: none;
+        display: flex;
+        gap: var(--spacing-medium);
+        align-items: center;
+      }
+
+      .header .nav-links a {
+        font-weight: 600;
+      }
+
+      .header .cta-button {
+        margin-left: var(--spacing-large);
+      }
+
+      .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        background-image: url('hero-background.jpg');
+        background-size: cover;
+        background-position: center;
+        animation: gradient-animation 10s ease infinite;
+      }
+
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 255, 195, 0.1) 0%,
+          rgba(255, 46, 255, 0.1) 100%
+        );
+        opacity: 0.6;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero-content h1 {
+        font-size: 4rem;
+        margin-bottom: var(--spacing-small);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .hero-content h2 {
+        font-size: 1.5rem;
+        color: var(--color-text-secondary);
+        margin-bottom: var(--spacing-large);
+      }
+
+      .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: var(--spacing-medium);
+      }
+
+      .features {
+        background-color: var(--color-background-darker);
+      }
+
+      .features .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--spacing-large);
+      }
+
+      .feature-card {
+        background-color: var(--color-background);
+        border-radius: var(--border-radius-medium);
+        padding: var(--spacing-large);
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        border: 1px solid transparent;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        border-color: var(--color-accent);
+      }
+
+      .feature-card .icon {
+        margin-bottom: var(--spacing-small);
+      }
+
+      .feature-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-small);
+      }
+
+      .feature-card p {
+        color: var(--color-text-secondary);
+      }
+
+      .media .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-small);
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--border-radius-small);
+        cursor: pointer;
+      }
+
+      .gallery-item img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .gallery-item::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .gallery-item:hover::after {
+        opacity: 1;
+      }
+
+      .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lightbox.active {
+        display: flex;
+      }
+
+      .lightbox-content {
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+      .lightbox-content img,
+      .lightbox-content video {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+      }
+
+      .lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        color: var(--color-text-primary);
+        cursor: pointer;
+      }
+
+      .status-section {
+        background-color: var(--color-background-darker);
+      }
+
+      .status-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .status-item {
+        background-color: var(--color-background);
+        border-radius: var(--border-radius-small);
+        padding: var(--spacing-small) var(--spacing-medium);
+        margin-bottom: var(--spacing-small);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .status-item .game-name {
+        font-weight: 600;
+      }
+
+      .status-indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-left: var(--spacing-small);
+        display: inline-block;
+      }
+
+      .status-indicator.online {
+        background-color: limegreen;
+      }
+
+      .status-indicator.down {
+        background-color: red;
+      }
+
+      .status-notes {
+        font-size: 0.9rem;
+        color: var(--color-text-muted);
+        margin-left: var(--spacing-medium);
+      }
+
+      .footer {
+        background-color: var(--color-background-footer);
+        color: var(--color-text-muted);
+        padding: var(--spacing-large) 0;
+        font-size: 0.9rem;
+      }
+
+      .footer .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--spacing-large);
+      }
+
+      .footer-column h4 {
+        font-size: 1.2rem;
+        margin-bottom: var(--spacing-small);
+        color: var(--color-text-primary);
+      }
+
+      .footer-column ul {
+        list-style: none;
+      }
+
+      .footer-column ul li {
+        margin-bottom: var(--spacing-unit);
+      }
+
+      .footer-column ul li a {
+        color: var(--color-text-muted);
+      }
+
+      .footer-column ul li a:hover {
+        color: var(--color-accent);
+      }
+
+      .footer .copyright {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: var(--spacing-large);
+      }
+
+      .terms-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1010;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+        padding: 20px;
+      }
+
+      .terms-modal.active {
+        display: flex;
+      }
+
+      .terms-modal-content {
+        background-color: var(--color-background-darker);
+        color: var(--color-text-primary);
+        padding: var(--spacing-large);
+        border-radius: var(--border-radius-medium);
+        max-width: 800px;
+        width: 100%;
+        position: relative;
+        max-height: 90vh;
+        overflow-y: auto;
+      }
+
+      .terms-modal-content h2 {
+        margin-top: 0;
+        margin-bottom: var(--spacing-large);
+        text-align: center;
+      }
+
+      .terms-modal-content p {
+        margin-bottom: var(--spacing-medium);
+        color: var(--color-text-secondary);
+      }
+
+      .terms-modal-content ol,
+      .terms-modal-content ul {
+        margin-bottom: var(--spacing-medium);
+        padding-left: var(--spacing-medium);
+      }
+
+      .terms-modal-content li {
+        margin-bottom: var(--spacing-unit);
+      }
+
+      .terms-modal-close {
+        position: absolute;
+        top: var(--spacing-medium);
+        right: var(--spacing-medium);
+        font-size: 2rem;
+        color: var(--color-text-primary);
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      .terms-modal-close:hover {
+        color: var(--color-accent);
+      }
+
+      @media (max-width: 768px) {
+        .header .nav-links {
+          display: none;
+        }
+
+        .header .container {
+          justify-content: center;
+        }
+
+        .hero-content h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero-content h2 {
+          font-size: 1.2rem;
+        }
+
+        .hero-buttons {
+          flex-direction: column;
+          gap: var(--spacing-small);
+        }
+
+        .features .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .media .gallery {
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+        .footer .container {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .footer-column ul {
+          padding: 0;
+        }
+
+        .terms-modal-content {
+          padding: var(--spacing-medium);
+        }
+
+        .terms-modal-close {
+          top: var(--spacing-small);
+          right: var(--spacing-small);
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1200px) {
+        .features .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo"></div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="https://alwayswinclub.sell.app/">Purchase</a></li>
+            <li><a href="#media">Media</a></li>
+            <li>
+              <a href="#" id="openTermsModal">Terms of Service</a>
+            </li>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Always Win</h1>
+        <h2>High Quality Game Modifications</h2>
+        <div class="hero-buttons">
+          <a href="https://alwayswinclub.sell.app/" class="button button-primary"
+            >Purchase</a
+          >
+          <a href="https://discord.gg/hJBmBqxJwA" class="button button-secondary">Discord</a>
+          <a href="#status" class="button button-secondary">Status</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="grid">
+          <div class="feature-card">
+            <div class="icon">
+              <i data-feather="clock" width="32" height="32"></i>
+            </div>
+            <h3>Time Compensation</h3>
+            <p>Receive extra time automatically if services are down.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <i data-feather="shopping-cart" width="32" height="32"></i>
+            </div>
+            <h3>Automated Purchases & HWID Resets</h3>
+            <p>Instant delivery and self-service HWID resets.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <i data-feather="code" width="32" height="32"></i>
+            </div>
+            <h3>Internal Injection</h3>
+            <p>Seamless and powerful injection method.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <i data-feather="tv" width="32" height="32"></i>
+            </div>
+            <h3>Streamproof Display</h3>
+            <p>Hide your cheat overlay from streams and recordings.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <i data-feather="layout" width="32" height="32"></i>
+            </div>
+            <h3>Custom GUI (non-ImGui)</h3>
+            <p>Unique and user-friendly graphical interface.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <i data-feather="shield" width="32" height="32"></i>
+            </div>
+            <h3>Built-in HWID Spoofer</h3>
+            <p>All keys are provided with a HWID Spoofer for the respective game.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <i data-feather="activity" width="32" height="32"></i>
+            </div>
+            <h3>Active Status Page</h3>
+            <p>Always know the live status of all our services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="media" class="section media">
+      <div class="container">
+        <h2 class="section-title">Media</h2>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            data-type="image"
+            data-src="media/r6-screenshot1.jpg"
+          >
+            <img
+              src="media/r6-screenshot1-thumb.jpg"
+              alt="Rainbow Six Siege Screenshot 1"
+            />
+          </div>
+          <div
+            class="gallery-item"
+            data-type="image"
+            data-src="media/dayz-screenshot1.jpg"
+          >
+            <img src="media/dayz-screenshot1-thumb.jpg" alt="DayZ Screenshot 1" />
+          </div>
+          <div
+            class="gallery-item"
+            data-type="image"
+            data-src="media/headliners-screenshot1.jpg"
+          >
+            <img
+              src="media/headliners-screenshot1-thumb.jpg"
+              alt="Headliners Screenshot 1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="status" class="section status-section">
+      <div class="container">
+        <h2 class="section-title">Service Status</h2>
+        <ul class="status-list">
+          <li class="status-item">
+            <span class="game-name">Rainbow Six Siege</span>
+            <div>
+              <span class="status-notes">Checking...</span>
+              <span class="status-indicator down" title="Down"></span>
+            </div>
+          </li>
+
+          <li class="status-item">
+            <span class="game-name">DayZ</span>
+            <div>
+              <span class="status-notes">Checking...</span>
+              <span class="status-indicator down" title="Down"></span>
+            </div>
+          </li>
+          <li class="status-item">
+            <span class="game-name">Rust</span>
+            <div>
+              <span class="status-notes">Checking...</span>
+              <span class="status-indicator down" title="Down"></span>
+            </div>
+          </li>
+        </ul>
+        <p
+          style="
+            text-align: center;
+            margin-top: var(--spacing-medium);
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+          "
+        >
+          Status updates may be slightly delayed.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#media">Media</a></li>
+            <li>
+              <a href="#" id="openFooterTermsModal">Terms of Service</a>
+            </li>
+            <li><a href="#">Panel/Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <p>
+            Disclaimer: Our software is for educational and testing purposes
+            only. We are not responsible for any misuse.
+          </p>
+          <p>
+            All trademarks and registered trademarks are the property of their
+            respective owners.
+          </p>
+        </div>
+        <div class="copyright">
+          &copy; 2025 AlwaysWin.Club - All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <div class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <div class="lightbox-content"></div>
+    </div>
+
+    <div id="termsModal" class="terms-modal">
+      <div class="terms-modal-content">
+        <span class="terms-modal-close">&times;</span>
+        <h2>Terms of Service</h2>
+        <div id="termsContent"></div>
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+
+      document
+        .querySelectorAll(
+          'a[href^="#"]:not(#openTermsModal):not(#openFooterTermsModal)',
+        )
+        .forEach((anchor) => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            const headerOffset = document.querySelector('.header').offsetHeight;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition =
+              elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth',
+            });
+          });
+        });
+
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      const lightbox = document.querySelector('.lightbox');
+      const lightboxContent = document.querySelector('.lightbox-content');
+      const lightboxClose = document.querySelector('.lightbox-close');
+
+      galleryItems.forEach((item) => {
+        item.addEventListener('click', () => {
+          const dataType = item.getAttribute('data-type');
+          const dataSrc = item.getAttribute('data-src');
+
+          lightboxContent.innerHTML = '';
+
+          if (dataType === 'image') {
+            const img = document.createElement('img');
+            img.src = dataSrc;
+            lightboxContent.appendChild(img);
+          } else if (dataType === 'video') {
+            const video = document.createElement('video');
+            video.src = dataSrc;
+            video.controls = true;
+            video.autoplay = true;
+            video.loop = true;
+            lightboxContent.appendChild(video);
+          }
+
+          lightbox.classList.add('active');
+        });
+      });
+
+      lightboxClose.addEventListener('click', () => {
+        closeLightbox();
+      });
+
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+          closeLightbox();
+        }
+      });
+
+      function closeLightbox() {
+        const videoElement = lightboxContent.querySelector('video');
+        if (videoElement) {
+          videoElement.pause();
+        }
+        lightbox.classList.remove('active');
+      }
+
+      const termsModal = document.getElementById('termsModal');
+      const openTermsModalLink = document.getElementById('openTermsModal');
+      const openFooterTermsModalLink = document.getElementById(
+        'openFooterTermsModal',
+      );
+      const termsModalClose = termsModal.querySelector('.terms-modal-close');
+      const termsContentDiv = document.getElementById('termsContent');
+
+      function openTermsModal() {
+        termsModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeTermsModal() {
+        termsModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      openTermsModalLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        openTermsModal();
+      });
+
+      openFooterTermsModalLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        openTermsModal();
+      });
+
+      termsModalClose.addEventListener('click', closeTermsModal);
+
+      termsModal.addEventListener('click', (e) => {
+        if (e.target === termsModal) {
+          closeTermsModal();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && termsModal.classList.contains('active')) {
+          closeTermsModal();
+        }
+      });
+
+      termsContentDiv.innerHTML = `
+            <h3>1. Acceptance of Terms</h3>
+            <p>By accessing and using the services provided by AlwaysWin.Club ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Service.</p>
+
+            <h3>2. Description of Service</h3>
+            <p>AlwaysWin.Club provides access to software designed for use with certain video games ("the Software"). The Service includes delivery of the Software and related support.</p>
+
+            <h3>3. Use of the Software</h3>
+            <p>The Software is provided for educational and testing purposes only. Any use of the Software in online multiplayer environments may violate the terms of service of the respective game and could result in account suspension or banning. AlwaysWin.Club is not responsible for any consequences arising from the use of the Software.</p>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Distribute, reproduce, or resell the Software or access to the Service.</li>
+                <li>Reverse engineer, decompile, or disassemble the Software.</li>
+                <li>Use the Software for any illegal or unauthorized purpose.</li>
+                <li>Attempt to disrupt or interfere with the Service or associated infrastructure.</li>
+            </ul>
+
+             <h3>4. Disclaimer of Warranties</h3>
+             <p>THE SERVICE AND SOFTWARE ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+             <p>AlwaysWin.Club does not warrant that the Service or Software will be uninterrupted, error-free, secure, or that any defects will be corrected. Your use of the Service and Software is at your sole risk.</p>
+
+            <h3>5. Limitation of Liability</h3>
+            <p>IN NO EVENT SHALL ALWAYSWIN.CLUB BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM (i) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICE OR SOFTWARE; (ii) ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON THE SERVICE; (iii) ANY CONTENT OBTAINED FROM THE SERVICE; AND (iv) UNAUTHORIZED ACCESS, USE OR ALTERATION OF YOUR TRANSMISSIONS OR CONTENT, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), OR ANY OTHER LEGAL THEORY, WHETHER OR NOT WE HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+
+            <h3>6. Governing Law</h3>
+            <p>These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law principles.</p>
+
+            <h3>7. Changes to Terms</h3>
+            <p>We reserve the right to modify or replace these Terms at any time. We will provide notice of any significant changes. By continuing to access or use the Service after those revisions become effective, you agree to be bound by the revised terms.</p>
+
+            <h3>8. Contact Information</h3>
+            <p>If you have any questions about these Terms, please contact us at [Your Contact Email or Link].</p>
+
+            <p style="font-size: 0.8em; color: var(--color-text-muted); text-align: center; margin-top: var(--spacing-large);">Last updated: May 23, 2025</p>
+        `;
+
+      const cards = document.querySelectorAll('.feature-card');
+      const galleryItemsElements = document.querySelectorAll('.gallery-item');
+
+      const observerOptions = {
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      cards.forEach((card) => {
+        card.style.opacity = 0;
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        observer.observe(card);
+      });
+
+      galleryItemsElements.forEach((item) => {
+        item.style.opacity = 0;
+        item.style.transform = 'scale(0.9)';
+        item.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        observer.observe(item);
+      });
+
+      let lastScrollTop = 0;
+      const header = document.querySelector('.header');
+      const headerHeight = header.offsetHeight;
+
+      window.addEventListener(
+        'scroll',
+        function () {
+          let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (scrollTop > lastScrollTop && scrollTop > headerHeight) {
+            header.classList.add('hidden');
+          } else {
+            header.classList.remove('hidden');
+          }
+          lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        },
+        false,
+      );
+    </script>
+  </body>
+</html>
